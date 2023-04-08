@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	leetcode.Test1()
-	fmt.Printf("hello world\n")
+	leetcode.Test2()
+	fmt.Printf("\nhello world\n")
 }

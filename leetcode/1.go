@@ -24,8 +24,8 @@ func Test1() {
 	nums := []int{2, 7, 11, 15}
 	ret := twoSum(nums, 18)
 	if ret != nil && len(ret) == 2 {
-		fmt.Printf("%d\t%d\n", ret[0], ret[1])
+		fmt.Printf("%d\t%d", ret[0], ret[1])
 	} else {
-		fmt.Printf("Not found !\n")
+		fmt.Printf("Not found !")
 	}
 }
