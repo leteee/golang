@@ -28,7 +28,7 @@ func lengthOfLongestSubstring(s string) int {
 	return ans
 }
 
-func Test3() {
+func Test0003() {
 	s := "abcabcbb"
 	ret := lengthOfLongestSubstring(s)
 	fmt.Printf("%d", ret)

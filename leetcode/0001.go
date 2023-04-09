@@ -20,7 +20,7 @@ func twoSum(nums []int, target int) []int {
 	return nil
 }
 
-func Test1() {
+func Test0001() {
 	nums := []int{2, 7, 11, 15}
 	ret := twoSum(nums, 18)
 	if ret != nil && len(ret) == 2 {

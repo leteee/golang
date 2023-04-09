@@ -82,7 +82,7 @@ func reverseList(head *ListNode) *ListNode {
 	return newHead
 }
 
-func Test2() {
+func Test0002() {
 	l1 := makeListNode([]int{2, 4, 3})
 	l2 := makeListNode([]int{5, 6, 4})
 	res := addTwoNumbers(l1, l2)
