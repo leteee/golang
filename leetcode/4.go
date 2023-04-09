@@ -22,17 +22,15 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	for left < right {
 		i := (left + right + 1) >> 1
 		j := medianIdx - i
-		nums1Im1 := math.MinInt32
-		if i != 0 {
-			nums1Im1 = nums1[i-1]
-		}
+		nums1Im1 := If(i == 0, math.MinInt32, nums1[i-1]).(int)
 		nums2j := nums2[j]
 		if nums1Im1 < nums2j {
-			left++
+			left = i
 		} else {
-			right--
+			right = i - 1
 		}
 	}
+
 	i, j := left, medianIdx-left
 	median := max(If(i == 0, math.MinInt32, nums1[i-1]).(int), nums2[j-1])
 	if (m+n)%2 == 0 {
