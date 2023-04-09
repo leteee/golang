@@ -47,5 +47,5 @@ func Test4() {
 	nums1 := []int{1, 3}
 	num2 := []int{2}
 	ret := findMedianSortedArrays(nums1, num2)
-	fmt.Printf("%f", ret)
+	fmt.Printf("%.2f", ret)
 }
