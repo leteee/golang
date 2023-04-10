@@ -1,1 +1,1 @@
-# golang
+# lang-go
